@@ -20,13 +20,11 @@ $(document).ready(function(){
     var element = document.createElement("li");
     element.setAttribute("id",index);
     getWines.appendChild(element); 
+    //piilottaa luodut li elementit
     $("li").hide();
         
 };
-     //piilottaa luodut elementit
-     
-
-    
+         
 });
 
 function searchWine() {
@@ -36,7 +34,7 @@ function searchWine() {
     var input = document.getElementById("etsiviini");
     var filterterm = getWines.getElementsByTagName("li");
     
-    //isoilla kirjaimilla ei merkitystä
+    //toUppercase=isoilla kirjaimilla ei merkitystä
     var filter = input.value.toUpperCase();
     
         
