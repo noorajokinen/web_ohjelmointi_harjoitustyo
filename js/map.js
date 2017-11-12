@@ -1,7 +1,7 @@
 function initMap() {
     // create a map, point to the central of Finland
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 62.2426034, lng: 25.7472567},
+        center: {lat: 65.2426034, lng: 25.7472567},
         zoom: 5
     });
     
@@ -20,7 +20,6 @@ function initMap() {
         
         // loop through all courses
        $.each(data.stores, function(index,store) {
-            console.log(store.name);
             
                         // get position lat and lng
            var storesLatLng = {lat: store.latitude, lng: store.longitude};
@@ -45,7 +44,7 @@ function initMap() {
                     '<div id="content">'+
                     '<h1 id="heading">'+this.title+'</h1>'+'<p>'+this.osoite+", "+this.postinro+" "+this.city+'</p>'+
                     '<p>'+"Puhelin: "+this.puhnro+'</p>'+
-                    '<p>'+"Avoinna ma-pe: "+this.auki0+'</p>'
+                    '<p>'+"Avoinna ma-pe: "+this.auki0+'</br>'+"Avoinna la: "+this.auki1+'</p>'
                 );
                 // show info window
                 infowindow.open(map, this);

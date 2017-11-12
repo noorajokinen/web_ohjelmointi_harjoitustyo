@@ -3,12 +3,63 @@
   <head>
     <meta charset="utf-8">
       <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <!-- Font -->
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
   </head>
   <body>
+      <main>
+      
+          <header>
+              <h1>Oh, Wine...</h1>
+      
+          </header>
+          
+          <div id="haku">
+               
+            <input id="etsiviini" onkeyup="searchWine()" placeholder="Hae viinejä">
+          
+            <div id="viinituloste"></div>
+              
+              
+          </div>
+          
+          <section>
+              <article>
+                  <div class="innerbox">
+                    <img src="images/wine1.jpg" alt="White wine">
+                    <p>Versatile and popular, chardonnay grows all over the world. It reaches its mineral-laced pinnacle in Burgundy, ripens to tropical richness in California and Australia, and takes very well to new oak. It picks up buttery aromas from malolactic fermentation, and toasty or vanilla scents from aging in new barrels.</p>
+                  </div>
+              </article>
+              <article>
+                  <div class="innerbox">
+                    <img src="images/wine1.jpg" alt="White wine">
+                    <p>Versatile and popular, chardonnay grows all over the world. It reaches its mineral-laced pinnacle in Burgundy, ripens to tropical richness in California and Australia, and takes very well to new oak. It picks up buttery aromas from malolactic fermentation, and toasty or vanilla scents from aging in new barrels.</p>
+                  </div>
+              </article>
+          
+              <article>
+                  <div class="innerbox">
+                    <img src="images/wine1.jpg" alt="White wine">
+                    <p>Versatile and popular, chardonnay grows all over the world. It reaches its mineral-laced pinnacle in Burgundy, ripens to tropical richness in California and Australia, and takes very well to new oak. It picks up buttery aromas from malolactic fermentation, and toasty or vanilla scents from aging in new barrels.</p>
+                  </div>
+              </article>
+          
+              <article>
+                  <div class="innerbox">
+                    <img src="images/wine1.jpg" alt="White wine">
+                    <p>Versatile and popular, chardonnay grows all over the world. It reaches its mineral-laced pinnacle in Burgundy, ripens to tropical richness in California and Australia, and takes very well to new oak. It picks up buttery aromas from malolactic fermentation, and toasty or vanilla scents from aging in new barrels.</p>
+                  </div>
+              </article>
+          
+          </section>
       
     <div id="map"></div>
-    <script src="js/jquery-3.2.1.min.js"></script>
-      <script src="js/js.js"></script>
+      </main>
+      
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/map.js"></script>
+      <script src="js/viinit.js"></script>
+      <script src="js/search.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4r7fJBGwwjwSiPshFUvarceHcz85IEvI&callback=initMap" async defer></script>
   </body>
 </html>
