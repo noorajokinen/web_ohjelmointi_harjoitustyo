@@ -1,11 +1,11 @@
 $(document).ready(function(){
     
     var getWines = document.getElementById("viinituloste");
+    $("#haku").hide();
     
     for (var i=0; i < viinit.length; i++) {
     
     showInfo(i);
-    
         
 }  
     
@@ -24,7 +24,19 @@ $(document).ready(function(){
     $("li").hide();
         
 };
-         
+    
+    $("#button1").click(function(){
+        $("section").show();
+        $("#haku").hide();
+        $("#map").show();
+    });
+    
+      $("#button2").click(function(){
+        $("section").hide();
+        $("#haku").show();
+        $("#map").hide();
+    });
+  
 });
 
 function searchWineByName() {
