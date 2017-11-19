@@ -27,12 +27,13 @@ $(document).ready(function(){
          
 });
 
-function searchWine() {
+function searchWineByName() {
     
     var getWines = document.getElementById("viinituloste");
     
     var input = document.getElementById("etsiviini");
     var filterterm = getWines.getElementsByTagName("li");
+    
     
     //toUppercase=isoilla kirjaimilla ei merkitystä
     var filter = input.value.toUpperCase();
@@ -47,7 +48,7 @@ function searchWine() {
                $("#"+i).show();
                
                if (filter == "") {
-                   $("#"+i).hide();
+                   
                }
                  
             
@@ -55,7 +56,44 @@ function searchWine() {
             else {
                 $("#"+i).hide();
             }
-        
-        
         }
 };
+
+
+function searchWineByTaste() {
+    
+    var getWines = document.getElementById("viinituloste");
+    
+    var kuiva = document.getElementById("kuiva").checked;
+    var puolikuiva = document.getElementById("puolikuiva").checked;
+    var puolimakea = document.getElementById("puolimakea").checked;
+    var makea = document.getElementById("makea").checked;
+
+    
+    for(var i=0; i < viinit.length; i++){
+        
+        if(kuiva == true && viinit[i].makeus == 1) {
+             $("#"+i).show();
+            }
+        
+        else if(viinit[i].makeus == 2 && puolikuiva == true) {
+             $("#"+i).show();
+            }
+        else if(viinit[i].makeus == 3 && puolimakea == true) {
+             $("#"+i).show();
+            }
+        
+       else if(viinit[i].makeus == 4 && makea == true) {
+             $("#"+i).show();
+            }
+       else if(makea == false || kuiva == false || puolikuiva == false || puolimakea == false) {
+            $("#"+i).hide();
+        }
+    } 
+    
+}
+
+
+
+
+

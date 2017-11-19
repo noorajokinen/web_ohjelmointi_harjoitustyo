@@ -16,10 +16,17 @@
           
           <div id="haku">
                
-            <input id="etsiviini" onkeyup="searchWine()" placeholder="Hae viinejä">
-          
-            <div id="viinituloste"></div>
+            <input id="etsiviini" onkeyup="searchWineByName()" placeholder="Hae viinejä">
               
+              <div id="makeusaste">
+                  Kuiva <input type="checkbox" id="kuiva"> <br>
+                  Puolikuiva <input type="checkbox" id="puolikuiva"> <br>
+                  Puolimakea <input type="checkbox" id="puolimakea"> <br>
+                  Makea <input type="checkbox" id="makea"> <br>
+                  <button onclick="searchWineByTaste()">Etsi</button>
+              </div>
+              
+            <div id="viinituloste"></div>             
               
           </div>
           
