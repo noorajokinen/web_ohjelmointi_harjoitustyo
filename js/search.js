@@ -48,10 +48,8 @@ function searchWineByName() {
                $("#"+i).show();
                
                if (filter == "") {
-                   
+                   $("#"+i).hide();
                }
-                 
-            
             }
             else {
                 $("#"+i).hide();
@@ -61,8 +59,6 @@ function searchWineByName() {
 
 
 function searchWineByTaste() {
-    
-    var getWines = document.getElementById("viinituloste");
     
     var kuiva = document.getElementById("kuiva").checked;
     var puolikuiva = document.getElementById("puolikuiva").checked;
