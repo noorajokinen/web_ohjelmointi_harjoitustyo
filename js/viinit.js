@@ -2,14 +2,14 @@
 var viinit=
     [
         {"nimi":"Matua Sauvignon Blanc 2016 hanapakkaus",
-         "kuva":"",
+         "kuva":"../images/matua-sauvignon-blanc-2016-hanapakkaus.jpg",
          "hinta":"22,93 euroa",
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, sitruksinen, herukkainen, kevyen yrttinen, hennon mineraalinen",
          "makeus":1
         },
         {"nimi":"Devil's Rock Riesling 2016",
-         "kuva":"",
+         "kuva":"../images/devils-rock-riesling-2016.jpg",
          "hinta":"8,69 euroa",
          "maa":"Saksa",
          "kuvaus":"Puolikuiva, hapokas, hunajameloninen, aprikoosinen, klementiininen",

@@ -18,19 +18,30 @@ $(document).ready(function(){
     //luo uuden li elementin jokaiselle viinille ja antaa niille indexin mukaisen id:n
     function showInfo(index) {
     var element = document.createElement("li");
+    element.className = 'wines';
     element.setAttribute("id",index);
     getWines.appendChild(element); 
-    //piilottaa luodut li elementit
-    $("li").hide();
         
 };
+    //clikki-funktio li-elementille 
+    $(".wines").click(function() {
+
+        var element2 = document.createElement("ul"); //luodaan uusi ul-elementti
+        var element22 = document.createElement("li"); //luodaan uusi li-elementti
+        var infobox = $(this).closest("li").attr("id");//haetaan lähin li-elementti
+        $(element22).text(viinit[infobox].maa);//asettaa tekstin 
+        element2.appendChild(element22);
+        this.appendChild(element2); //appendaa element2
+
+    });
     
+    //vaihtaa etusivulta haku sivulle...
     $("#button1").click(function(){
         $("section").show();
         $("#haku").hide();
         $("#map").show();
     });
-    
+    //...ja hakusivulta etusivulle
       $("#button2").click(function(){
         $("section").hide();
         $("#haku").show();
@@ -59,9 +70,7 @@ function searchWineByName() {
                
                $("#"+i).show();
                
-               if (filter == "") {
-                   $("#"+i).hide();
-               }
+               
             }
             else {
                 $("#"+i).hide();
@@ -99,7 +108,7 @@ function searchWineByTaste() {
         }
     } 
     
-}
+};
 
 
 
