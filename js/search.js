@@ -30,13 +30,13 @@ $(document).ready(function(){
 // luo sivulle listan kaikista viineistä ja niiden tiedoista    
 function showAllWines(data){
      $.each(viinit, function(index, viini){
-        
-         var div = $("<div>").addClass("wineContainer");
+         var div = $("<div>").attr("class", "wineContainer").attr("id", viini.index);
          var header = $("<h3>").text(viini.nimi);
          var kuva = $("<img>").attr("class", "wineImage").attr("src", viini.kuva);
-         var maa =$("<p>").text(viini.maa);
-         var kuvaus = $("<p>").text(viini.kuvaus).addClass("kuvaus");
-         div.append(header, kuva, maa, kuvaus);
+         var maa =$("<p>").text("Maa:"+viini.maa);
+         var hinta =$("<p>").text("Hinta: "+viini.hinta);
+         var kuvaus = $("<p>").text("Kuvaus: "+viini.kuvaus).addClass("kuvaus");
+         div.append(header, kuva, maa, kuvaus, hinta);
          $("#viinit").append(div);
          
          

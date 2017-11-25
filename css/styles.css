@@ -8,6 +8,10 @@
     color: brown;
 }
 
+.wineContainer{
+    border-style: solid;
+    border-color: black;
+}
 body {
     margin: 0px auto;
     
