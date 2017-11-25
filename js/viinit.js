@@ -16,15 +16,15 @@ var viinit=
          "makeus":2
         },
         {"nimi":"St. Ursula Ornament Organic 2016",
-         "kuva":"",
-         "hinta":"8,69 euroa",
+         "kuva":"../images/ornament.webp",
+         "hinta":8.69,
          "maa":"Saksa",
          "kuvaus": "Puolimakea, keskihapokas, persikkainen, päärynäinen, hennon kukkainen",
          "makeus":3
         },
         {"nimi":"Bird's Tree 2016",
-         "kuva":"",
-         "hinta":"7,39 euroa",
+         "kuva":"../images/birds.webp",
+         "hinta":7.39,
          "maa":"Unkari",
          "kuvaus":"Makea, keskihapokas, persikkainen, kypsän päärynäinen, kevyen kukkainen, hennon hunajainen",
          "makeus":4
