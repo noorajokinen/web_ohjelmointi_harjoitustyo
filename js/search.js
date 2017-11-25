@@ -23,6 +23,26 @@ $(document).ready(function(){
     getWines.appendChild(element); 
         
 };
+    
+
+    
+})
+// luo sivulle listan kaikista viineistä ja niiden tiedoista    
+function showAllWines(data){
+     $.each(viinit, function(index, viini){
+        
+         var div = $("<div>").addClass("wineContainer");
+         var header = $("<h3>").text(viini.nimi);
+         var kuva = $("<img>").attr("class", "wineImage").attr("src", viini.kuva);
+         var maa =$("<p>").text(viini.maa);
+         var kuvaus = $("<p>").text(viini.kuvaus).addClass("kuvaus");
+         div.append(header, kuva, maa, kuvaus);
+         $("#viinit").append(div);
+         
+         
+     });
+            
+        }
     //clikki-funktio li-elementille 
     $(".wines").click(function() {
 
@@ -31,7 +51,8 @@ $(document).ready(function(){
         var infobox = $(this).closest("li").attr("id");//haetaan lähin li-elementti
         $(element22).text(viinit[infobox].maa);//asettaa tekstin 
         element2.appendChild(element22);
-        this.appendChild(element2); //appendaa element2
+        this.appendChild(element2);//appendaa element2
+        $("#viinit").hide(); //EI TOIMI
 
     });
     
@@ -40,15 +61,24 @@ $(document).ready(function(){
         $("section").show();
         $("#haku").hide();
         $("#map").show();
+        $("#viinit").hide();
     });
     //...ja hakusivulta etusivulle
       $("#button2").click(function(){
         $("section").hide();
         $("#haku").show();
         $("#map").hide();
+       $(showAllWines);
+        $("#viinit").show();
+          
+        
     });
-  
+
+$(".wineContainer").click(function(){
+    console.log(jee)
 });
+  
+
 
 function searchWineByName() {
     
