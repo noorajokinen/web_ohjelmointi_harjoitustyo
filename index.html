@@ -8,10 +8,11 @@
   </head>
   <body>
       <main>
+          <form method="get" oninput="z2.value=b.value">
+
       
           <header>
               <h1>Oh, Wine...</h1>
-      
           </header>
           
           <span id="button1">Etusivu</span>
@@ -27,43 +28,24 @@
                   Puolimakea <input type="checkbox" id="puolimakea"> <br>
                   Makea <input type="checkbox" id="makea"> <br>
                   <button onclick="searchWineByTaste()">Etsi</button>
+                  <button onclick="emptySearch()">Tyhjennä</button>
               </div>
-              
+           
+              <label id="hinta2">
+                    
+                    <output id="z2" name="z2" for="b"></output>
+                    EUR<br>
+                    1 EUR
+                    
+                    <input type="range" id="b" value="15" min="1" max="30"> 30 EUR
+                
+                </label>
+   
             <div id="viinituloste"></div>
               
           </div>
+          <section id="randomviini"></section>
           
-          <section id="randomviini">
-              <article>
-                  <div class="innerbox">
-                    <img src="images/wine1.jpg" alt="White wine">
-                    <p>Versatile and popular, chardonnay grows all over the world. It reaches its mineral-laced pinnacle in Burgundy, ripens to tropical richness in California and Australia, and takes very well to new oak. It picks up buttery aromas from malolactic fermentation, and toasty or vanilla scents from aging in new barrels.</p>
-                  </div>
-              </article>
-              <article>
-                  <div class="innerbox">
-                    <img src="images/wine1.jpg" alt="White wine">
-                    <p>Versatile and popular, chardonnay grows all over the world. It reaches its mineral-laced pinnacle in Burgundy, ripens to tropical richness in California and Australia, and takes very well to new oak. It picks up buttery aromas from malolactic fermentation, and toasty or vanilla scents from aging in new barrels.</p>
-                  </div>
-              </article>
-          
-              <article>
-                  <div class="innerbox">
-                    <img src="images/wine1.jpg" alt="White wine">
-                    <p>Versatile and popular, chardonnay grows all over the world. It reaches its mineral-laced pinnacle in Burgundy, ripens to tropical richness in California and Australia, and takes very well to new oak. It picks up buttery aromas from malolactic fermentation, and toasty or vanilla scents from aging in new barrels.</p>
-                  </div>
-              </article>
-          
-              <article>
-                  <div class="innerbox">
-                    <img src="images/wine1.jpg" alt="White wine">
-                    <p>Versatile and popular, chardonnay grows all over the world. It reaches its mineral-laced pinnacle in Burgundy, ripens to tropical richness in California and Australia, and takes very well to new oak. It picks up buttery aromas from malolactic fermentation, and toasty or vanilla scents from aging in new barrels.</p>
-                  </div>
-              </article>
-          
-          </section>
-          <div id="viinit"></div>
-      
     <div id="map"></div>
       </main>
       
