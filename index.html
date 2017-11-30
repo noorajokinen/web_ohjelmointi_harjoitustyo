@@ -5,10 +5,11 @@
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       <!-- Font -->
       <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
   <body>
       <main>
-          <form method="get" oninput="z2.value=slider.value">
+          <form method="get" oninput="z2.value=slider.value"></form>
 
       
           <header>
@@ -36,9 +37,8 @@
                     
                     1€
                     
-                    <input type="range" id="slider" value="30" min="1" max="30"> 30€
-                    
-                    <button onclick="searchWineByPrice()">Etsi</button><br>
+                    <input type="range" id="slider" value="30" min="1" max="30" onclick="searchWineByPrice()"> 30€
+                    <br>
                   <output id="price" name="z2" for="slider"></output>
                     €<br>
                 

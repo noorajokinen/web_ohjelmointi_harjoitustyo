@@ -58,10 +58,10 @@ function randomWine() {
 function showAllWines(data){
      $.each(viinit, function(index, viini){
          var div = $("<div>").attr("class", "wineContainer").attr("id", index);
-         var header = $("<h3>").text(viini.nimi);
+         var header = $("<h3>").text(viini.nimi).attr("class", "wineName");
          var kuva = $("<img>").attr("class", "wineImage").attr("src", viini.kuva);
          var maa =$("<p>").text("Maa:"+viini.maa);
-         var hinta =$("<p>").text("Hinta: "+viini.hinta);
+         var hinta =$("<p>").text("Hinta: "+viini.hinta).attr("class", "hinta");
          var kuvaus = $("<p>").text("Kuvaus: "+viini.kuvaus).addClass("kuvaus");
          div.append(header, kuva, maa, kuvaus, hinta);
          $("#viinituloste").append(div);
@@ -157,12 +157,13 @@ function emptySearch() {
     $("#slider").val('30');
 }
 
+// Slider, jolla pystyy asettamaan viinille maksimihinnan
 function searchWineByPrice(){
     var winePrice = document.getElementById("price").valueOf;
     
     for(var i=0; i< viinit.length; i++){
     
-    if(winePrice >= viinit[i].hinta){
+    if(viinit[i].hinta <= winePrice){
         $("#"+i).show();
     }
     else {
@@ -171,6 +172,7 @@ function searchWineByPrice(){
 }
     
 };
+
 
 /*
 $(function(){
