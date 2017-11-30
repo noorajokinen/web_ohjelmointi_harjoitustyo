@@ -159,7 +159,8 @@ function emptySearch() {
 
 // Slider, jolla pystyy asettamaan viinille maksimihinnan
 function searchWineByPrice(){
-    var winePrice = document.getElementById("price").valueOf;
+    
+    var winePrice = document.getElementById("price").value;
     
     for(var i=0; i< viinit.length; i++){
     
@@ -175,6 +176,7 @@ function searchWineByPrice(){
 
 
 /*
+
 $(function(){
     $("#slider-range").slider({
         range: true,
@@ -187,8 +189,8 @@ $(function(){
     });
     $("#maara").val("$" + $("#silder-range").slider("values", 0)+ " -$" + $("#silder-range").slider("values", 1));
 });
-*/
 
+*/
 
 
 
