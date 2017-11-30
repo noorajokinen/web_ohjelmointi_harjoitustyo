@@ -16,7 +16,8 @@ function WinesList(data){
          var maa =$("<p>").text("Maa:"+viini.maa);
          var hinta =$("<p>").text("Hinta: "+viini.hinta);
          var kuvaus = $("<p>").text("Kuvaus: "+viini.kuvaus).addClass("kuvaus");
-         div.append(header, kuva, maa, kuvaus, hinta);
+         var arvio = $("<p>").text("Arvio: "+viini.arvio).attr("class", "arvio")
+         div.append(header, kuva, maa, kuvaus, hinta, arvio);
          $("#randomviini").append(div);  
      });       
 };
@@ -63,7 +64,8 @@ function showAllWines(data){
          var maa =$("<p>").text("Maa:"+viini.maa);
          var hinta =$("<p>").text("Hinta: "+viini.hinta);
          var kuvaus = $("<p>").text("Kuvaus: "+viini.kuvaus).addClass("kuvaus");
-         div.append(header, kuva, maa, kuvaus, hinta);
+         var arvio = $("<p>").text("Arvio: "+viini.arvio).attr("class", "arvio")
+         div.append(header, kuva, maa, kuvaus, hinta, arvio);
          $("#viinituloste").append(div);
              
      });       

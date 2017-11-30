@@ -6,168 +6,192 @@ var viinit=
          "hinta":22.93,
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, sitruksinen, herukkainen, kevyen yrttinen, hennon mineraalinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "PARAS KAIKISTA!"
         },
         {"nimi":"Devil's Rock Riesling 2016",
          "kuva":"images/devils-rock-riesling-2016.jpg",
          "hinta":8.69,
          "maa":"Saksa",
          "kuvaus":"Puolikuiva, hapokas, hunajameloninen, aprikoosinen, klementiininen",
-         "makeus":2
+         "makeus":2,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"St. Ursula Ornament Organic 2016",
          "kuva":"images/ornament.webp",
          "hinta":8.69,
          "maa":"Saksa",
          "kuvaus": "Puolimakea, keskihapokas, persikkainen, päärynäinen, hennon kukkainen",
-         "makeus":3
+         "makeus":3,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Bird's Tree 2016",
          "kuva":"images/birds.webp",
          "hinta":7.39,
          "maa":"Unkari",
          "kuvaus":"Makea, keskihapokas, persikkainen, kypsän päärynäinen, kevyen kukkainen, hennon hunajainen",
-         "makeus":4
+         "makeus":4,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Mud House Sauvignon Blanc 2016",
          "kuva":"images/mudhouse.webp",
          "hinta":14.99,
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, limettinen, viherherukkainen, tomaatinlehtinen, nokkosinen, rodukas",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Pino Pino Vino Frizzante Pinot Noir",
          "kuva":"images/pinopino.webp",
          "hinta":8.98,
          "maa":"Italia",
          "kuvaus":"Puolikuiva, hapokas, päärynäinen, sitruksinen, kevyen persikkainen. pirskahteleva",
-         "makeus":2
+         "makeus":2,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Hardys Bin 141 Colombard Chardonnay 2016",
          "kuva":"images/hardys.webp",
          "hinta":6.99,
          "maa":"Australia",
          "kuvaus":"Kuiva, hapokas, päärynähilloinen, sitruksinen, viheromenainen, kevyen yrttinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Douglas Green Chenin Blanc 2017",
          "kuva":"images/douglas.webp",
          "hinta":6.99,
          "maa":"Etelä-Afrikka",
          "kuvaus":"Kuiva, hapokas, kypsän sitruksinen, klementiininen, viheromenainen, yrttinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Black Tower Classic Riesling 2016",
          "kuva":"images/blacktower.webp",
          "hinta":9.49,
          "maa":"Saksa",
          "kuvaus":"Puolikuiva, hapokas, sitruksinen, viheromenainen, kevyen aprikoosinen, yrttinen",
-         "makeus":2
+         "makeus":2,
+         "arvio": "Ei vielä arviota."
         },
             {"nimi":"Vicarage Lane Marlborough Sauvignon Blanc 2017",
          "kuva":"images/vicarage.webp",
          "hinta":11.99,
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, limettinen, viherherukkainen, herukanlehtinen, kevyen passionhedelmäinen",
-         "makeus":1
+         "makeus":1,
+        "arvio": "Ei vielä arviota."
         },
         {"nimi":"Old Coach Road Unoaked Chardonnay 2016",
          "kuva":"images/oldcoach.webp",
          "hinta":12.82,
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, kypsän sitruksinen, keltaomenainen, kevyen ananaksinen, mausteinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Gazzera Pinot Grigio Moscato Organic 2016",
          "kuva":"images/gazzera.webp",
          "hinta":8.99,
          "maa":"Italia",
          "kuvaus":"Puolikuiva, keskihapokas, sitruksinen, päärynäinen, litsiluumuinen, kukkainen",
-         "makeus":2
+         "makeus":2,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Yellow Tail Pinot Grigio 2016",
          "kuva":"images/yellowtail.webp",
          "hinta":9.99,
          "maa":"Australia",
          "kuvaus":"Puolikuiva, keskihapokas, sitruksinen, päärynäinen, kevyen persikkainen, yrttinen",
-         "makeus":2
+         "makeus":2,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Casa di Malia Organic Prosecco Frizzante",
          "kuva":"images/casadi.webp",
          "hinta":12.49,
          "maa":"Italia",
          "kuvaus":"Puolikuiva, hapokas, pirskahteleva, kevyen limettinen, viherpäärynäinen, hennon aprikoosinen, yrttinen",
-         "makeus":2
+         "makeus":2,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Asio Otus Bianco",
          "kuva":"images/asio.webp",
          "hinta":10.98,
          "maa":"Italia",
          "kuvaus":"Puolikuiva, keskihapokas, aprikoosinen, hunajameloninen, sitrushilloinen, kukkainen, mausteinen",
-         "makeus":2
+         "makeus":2,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Vinha do Rosario 2015",
          "kuva":"images/vinha.webp",
          "hinta":6.89,
          "maa":"Portugali",
          "kuvaus":"Puolikuiva, keskihapokas, hunajameloninen, päärynäinen, hennon mausteinen",
-         "makeus":2
+         "makeus":2,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"J.P. Chenet Sauvignon Blanc 2016",
          "kuva":"images/jp.webp",
          "hinta":7.98,
          "maa":"Ranska",
          "kuvaus":"Kuiva, hapokas, karviaismainen, limettinen, kevyen herukkainen, hennon yrttinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Bigi Est! Est!! Est!!! 2015",
          "kuva":"images/bigi.webp",
          "hinta":9.01,
          "maa":"Italia",
          "kuvaus":"Kuiva, keskihapokas, sitruksinen, kevyen hedelmäinen, hennon mausteinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Lamberti Pinot Grigio 2016",
          "kuva":"images/lamberti.webp",
          "hinta":9.99,
          "maa":"Italia",
          "kuvaus":"Kuiva, keskihapokas, sitruksinen, kypsän päärynäinen, hennon hunajameloninen, kevyen yrttinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Oodi Vapaudelle Chenin Blanc 2016",
          "kuva":"images/oodi.webp",
          "hinta":9.99,
          "maa":"Etelä-Afrikka",
          "kuvaus":"Kuiva, hapokas, sitruksinen, viheromenainen, kevyen yrttinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Jacob's Creek Riesling 2017",
          "kuva":"images/jacobs.webp",
          "hinta":9.99,
          "maa":"Australia",
          "kuvaus":"Kuiva, hapokas, limettinen, viheromenainen, suolaheinäinen, hennon mineraalinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
             {"nimi":"Pelicans Sauvignon Blanc 2015",
          "kuva":"images/pelicans.webp",
          "hinta":10.95,
          "maa":"Chile",
          "kuvaus":"Kuiva, hapokas, yrttinen, sitruksinen, hedelmäinen, aromikas",
-         "makeus":1
+         "makeus":1,
+        "arvio": "Ei vielä arviota."
         },
         {"nimi":"Kärppäviini",
          "kuva":"images/karppa.webp",
          "hinta":11.90,
          "maa":"Ranska",
          "kuvaus":"Kuiva, keskihapokas, hedelmäinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
         },
         {"nimi":"B.io Catarratto Chardonnay Vino Biologico 2016",
          "kuva":"images/bio.webp",
          "hinta":12.79,
          "maa":"Italia",
          "kuvaus":"Kuiva, keskihapokas, hedelmäinen, sitruksinen, yrttinen",
-         "makeus":1
+         "makeus":1,
+         "arvio": "Ei vielä arviota."
          
         },
         {"nimi":"Gatão",
@@ -175,7 +199,8 @@ var viinit=
          "hinta":8.19,
          "maa":"Portugali",
          "kuvaus":"Puolikuiva, keskihapokas, viherpäärynäinen, ananaksinen, pirskahteleva.",
-         "makeus":2
+         "makeus":2,
+         "arvio": "Ei vielä arviota."
         },
         
     ]
