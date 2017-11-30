@@ -83,10 +83,7 @@ function showAllWines(data){
           
     });
 
-$(".wineContainer").click(function(){
-    console.log(jee)
-});
-  
+      
 
 function searchWineByName() {
     
@@ -157,12 +154,38 @@ function emptySearch() {
 }); 
     $(".wineContainer").show()
     $('#etsiviini').val('');
+    $("#slider").val('30');
 }
 
+function searchWineByPrice(){
+    var winePrice = document.getElementById("price").valueOf;
+    
+    for(var i=0; i< viinit.length; i++){
+    
+    if(winePrice >= viinit[i].hinta){
+        $("#"+i).show();
+    }
+    else {
+        $("#"+i).hide();
+    }
+}
+    
+};
 
-
-
-
+/*
+$(function(){
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 30,
+        values: [5,25],
+        slide: function(event, ui){
+        $("#maara").val("$" + ui.values[0] + " - $" + ui.values[1]);
+    }    
+    });
+    $("#maara").val("$" + $("#silder-range").slider("values", 0)+ " -$" + $("#silder-range").slider("values", 1));
+});
+*/
 
 
 

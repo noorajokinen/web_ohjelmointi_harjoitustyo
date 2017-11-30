@@ -8,16 +8,16 @@
   </head>
   <body>
       <main>
-          <form method="get" oninput="z2.value=b.value">
+          <form method="get" oninput="z2.value=slider.value">
 
       
           <header>
               <h1>Oh, Wine...</h1>
           </header>
-          
-          <span id="button1">Etusivu</span>
-          <span id="button2">Etsi viini</span>
-          
+          <nav>
+          <span class="button" id="button1">Etusivu</span>
+          <span class="button" id="button2">Etsi viini</span>
+          </nav>
           <div id="haku">
                
             <input id="etsiviini" onkeyup="searchWineByName()" placeholder="Hae viinejä">
@@ -31,13 +31,16 @@
                   <button onclick="emptySearch()">Tyhjennä</button>
               </div>
            
-              <label id="hinta2">
+              <label id="winePrice">
                     
-                    <output id="z2" name="z2" for="b"></output>
-                    EUR<br>
-                    1 EUR
                     
-                    <input type="range" id="b" value="15" min="1" max="30"> 30 EUR
+                    1€
+                    
+                    <input type="range" id="slider" value="30" min="1" max="30"> 30€
+                    
+                    <button onclick="searchWineByPrice()">Etsi</button><br>
+                  <output id="price" name="z2" for="slider"></output>
+                    €<br>
                 
                 </label>
    
