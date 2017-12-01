@@ -7,7 +7,7 @@ var viinit=
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, sitruksinen, herukkainen, kevyen yrttinen, hennon mineraalinen",
          "makeus":1,
-         "arvio": "PARAS KAIKISTA!"
+         "arvio": "Oma EHDOTON suosikkimme, jonka veroista emme ole löytäneet edes Puolan viinitiloilta. Kaikista autenttisin kokemus saadaan juomalla Matua juhannuksena, pahvimukaista. Matua on aidoimmillaan hanapakkauksesta, mutta pullojakin on nykyään saatavilla."
         },
         {"nimi":"Devil's Rock Riesling 2016",
          "kuva":"images/devils-rock-riesling-2016.jpg",
@@ -15,7 +15,7 @@ var viinit=
          "maa":"Saksa",
          "kuvaus":"Puolikuiva, hapokas, hunajameloninen, aprikoosinen, klementiininen",
          "makeus":2,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Melko menevä, kiva pippalojuoman, noin hintansa puolesta."
         },
         {"nimi":"St. Ursula Ornament Organic 2016",
          "kuva":"images/ornament.jpg",
@@ -23,7 +23,7 @@ var viinit=
          "maa":"Saksa",
          "kuvaus": "Puolimakea, keskihapokas, persikkainen, päärynäinen, hennon kukkainen",
          "makeus":3,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Muuttoviini. Jos muutto on seuraavana päivänä, tämä kannattaa napata Alkon hyllyltä matkaan. Alkaa ne laatikotkin täyttyä kuin itsestään."
         },
         {"nimi":"Bird's Tree 2016",
          "kuva":"images/birds.jpg",
@@ -31,7 +31,7 @@ var viinit=
          "maa":"Unkari",
          "kuvaus":"Makea, keskihapokas, persikkainen, kypsän päärynäinen, kevyen kukkainen, hennon hunajainen",
          "makeus":4,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Monien miesten suosikki. Ei liian viinimäinen, kuulemma."
         },
         {"nimi":"Mud House Sauvignon Blanc 2016",
          "kuva":"images/mudhouse.jpg",
@@ -39,7 +39,7 @@ var viinit=
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, limettinen, viherherukkainen, tomaatinlehtinen, nokkosinen, rodukas",
          "makeus":1,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Olemme hanakasti etsineet Matuasta korviketta, koska sitä ei ole ollut pulloissa saatavilla. Mud House on Alkon valikoimasta lähimpänä Matuaa. "
         },
         {"nimi":"Pino Pino Vino Frizzante Pinot Noir",
          "kuva":"images/pinopino.jpg",
@@ -47,7 +47,7 @@ var viinit=
          "maa":"Italia",
          "kuvaus":"Puolikuiva, hapokas, päärynäinen, sitruksinen, kevyen persikkainen. pirskahteleva",
          "makeus":2,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Tätä onkin todella simppeli juoda! Viinin maku itsessään on mieto, mutta tämä sopii erityisesti tilanteisiin joissa haluaa nopeasti pullon tyhjäksi. "
         },
         {"nimi":"Hardys Bin 141 Colombard Chardonnay 2016",
          "kuva":"images/hardys.jpg",
@@ -63,7 +63,7 @@ var viinit=
          "maa":"Etelä-Afrikka",
          "kuvaus":"Kuiva, hapokas, kypsän sitruksinen, klementiininen, viheromenainen, yrttinen",
          "makeus":1,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Tämä on todella hyvä luomuviini!"
         },
         {"nimi":"Black Tower Classic Riesling 2016",
          "kuva":"images/blacktower.jpg",
@@ -71,7 +71,7 @@ var viinit=
          "maa":"Saksa",
          "kuvaus":"Puolikuiva, hapokas, sitruksinen, viheromenainen, kevyen aprikoosinen, yrttinen",
          "makeus":2,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Black Towereista kaikki ovat klassikkoviinejä. Usein valintana kiireellisissä päätöksissä, koska tietää saavansa taattua laatua. "
         },
             {"nimi":"Vicarage Lane Marlborough Sauvignon Blanc 2017",
          "kuva":"images/vicarage.jpg",
@@ -79,7 +79,7 @@ var viinit=
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, limettinen, viherherukkainen, herukanlehtinen, kevyen passionhedelmäinen",
          "makeus":1,
-        "arvio": "Ei vielä arviota."
+        "arvio": "Tässä on toinen Matuan korvike. Tässä hyvänä puolena on edukas hinta!"
         },
         {"nimi":"Old Coach Road Unoaked Chardonnay 2016",
          "kuva":"images/oldcoach.jpg",
@@ -95,7 +95,7 @@ var viinit=
          "maa":"Italia",
          "kuvaus":"Puolikuiva, keskihapokas, sitruksinen, päärynäinen, litsiluumuinen, kukkainen",
          "makeus":2,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Gazzerra ei säväyttänyt ensimmäisellä lasillisella, mutta kun viinin antoi hieman hengittää, alkoi makukin parantua. Sopii erityisesti glögin kanssa sekoitettuna. "
         },
         {"nimi":"Yellow Tail Pinot Grigio 2016",
          "kuva":"images/yellowtail.jpg",
@@ -191,7 +191,7 @@ var viinit=
          "maa":"Italia",
          "kuvaus":"Kuiva, keskihapokas, hedelmäinen, sitruksinen, yrttinen",
          "makeus":1,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Erityisen ihastuttava pullo, ja viini erinomaista. Helppo juoda, mutta maukas!"
          
         },
         {"nimi":"Gatão",

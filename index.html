@@ -2,25 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
+      <!-- Stylesheet -->
       <link rel="stylesheet" type="text/css" href="css/styles.css">
-      <!-- Font -->
+      <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
   </head>
+    
   <body>
       <main>
       
           <header>
-              <h1>Oh, Wine...</h1>
+              <img id="headerImg" src="images/wineheader1.png">
           </header>
+          
           <nav>
-          <span class="button" id="button1">ETUSIVU </span>    
-          <span class="button" id="button2">ETSI VIINI</span>
-        <a href="dokumentaatio.html" class="button">DOKUMENTAATIO</a>
+              <span class="button" id="button1">ETUSIVU </span>    
+              <span class="button" id="button2">ETSI VIINI</span>
+            <a href="dokumentaatio.html" class="button" id="button3">DOKUMENTAATIO</a>
           </nav>
+          
           <div id="haku" class="container">
                <div id="tekstiHaku" class="search">
                    <h2 class="makunimi">Hae nimellä:</h2><br>
-            <input id="etsiviini" onkeyup="searchWineByName()" placeholder="Hae viinejä" class="searchBox">
+                <input id="etsiviini" onkeyup="searchWineByName()" placeholder="Hae viinejä" class="searchBox">
             </div>  
               <div id="makeusaste" class="search" >
                   <h2 class="makunimi">Hae makeusasteella:</h2><br>
@@ -45,7 +53,7 @@
                     
                   <br>
                   <p>Valittu hinta</p>
-                  <output id="price" name="price" for="slider">0</output> €
+                  1 - <output id="price" name="price" for="slider">30</output> €
               
               </label>
                   
@@ -53,16 +61,17 @@
                 </div>
               </div>
             <div id="viinituloste"></div>
-              <h2>Sinulle sopiva satunnainen viini</h2>
+              
+              <h2 class="h2">Sinulle sopivia satunnaisia viinejä</h2>
+              <section id="randomviini"></section>
           
-          <section id="randomviini"></section>
           <div id="kartta">
-          <h2>Suosikkejamme myyvät Alkot kautta maan </h2>
-    <div id="map"></div>
+          <h2 class="h2">Suosikkejamme myyvät Alkot kautta maan </h2>
+            <div id="map"></div>
           </div>    
           
       </main>
-      
+      <!-- JS-files and API-key -->
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/map.js"></script>
       <script src="js/viinit.js"></script>

@@ -27,9 +27,16 @@
 
 .wineContainer{
     width: 50%;
-    height: 300px;
     margin: 0px;
-    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid olive;
+    display: flex;
+    padding: 10px;
+}
+
+.wineList {
+    width: 50%;
+    margin: 0px;
     box-sizing: border-box;
     border: 1px solid olive;
     display: flex;
@@ -37,27 +44,18 @@
 }
 
 .infoDiv {
+    margin: 10px;
     width: 80%;
-    height: 300px;
-    margin: 0px;
-    padding-bottom: 70px;
-    padding-left: 20px;
     
 }
 .imgDiv {
-    align-content: center;
+    text-align: right;
+    margin: auto;
+    
 }
 
 
-@media screen and (max-width: 1000px) {
-    .wineContainer{
-        width: 100%;
-        height: 200px;
-        margin: 0;
-        padding: 2px;
-        box-sizing: border-box;    
-    }
-}
+
 body {
     margin: 0px auto;
     background-repeat: no-repeat;
@@ -72,41 +70,37 @@ main {
     margin-top: 0px;
     padding-bottom: 80px;
 }
-
 header {
-    text-align: center;
-    height: 340px;
-    background-image: url(/images/wineheader.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    border-radius: 3px;
-    margin-top: 0px;
-    
-    
+    margin: 0;
 }
+
+#headerImg {
+    width: 100%;
+    margin: 0;
+}
+
 nav {
-    align-content: center;
+    
+    box-sizing: border-box;
+    text-align: center;
     height: 100px;
     background-color: #758614;
-    padding-top: 20px;
     display: flex;
+    margin: auto;
     
 }
 
-nav > span {
-  flex: 1; 
-}
 .button{
     
     font-family: 'Raleway', sans-serif;
-    font-size: 2.7em;
     color: antiquewhite;
-    padding-bottom: 10px;
     border-color: darkolivegreen;
-    width: 33%;
-    text-align-last: center;
-    
-    
+    text-align: center;
+    font-size: 1.8em;
+    margin: auto;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
 }
 
 a {
@@ -114,22 +108,33 @@ a {
 }
 
 h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 5em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
     color:black;
-    padding-top: 130px;
 }
 h2 {
     text-align-last: center;
-    font-family: 'Lobster', cursive;
-    font-size: 3em;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2.5em;
     padding-top: 15px;
     padding-bottom: 10px;
 }
 
 h3 {
-    font-family: 'Lobster', cursive;
-    font-size: 2em;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.8em;
+    
+}
+
+.document-h3 {
+    margin: 5px 0;
+    background-color: #758614;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    margin: 5px 0;
 }
 
 section {
@@ -144,9 +149,11 @@ section {
 .container {
   display: flex;
 }
+
 .container > div {
   flex: 1; 
 }
+
 .search{
     text-align: center;
     padding-bottom: 30px;
@@ -165,7 +172,6 @@ float: center;
   outline: none;
   color: black;
 }
-
 
 
 #slider {
@@ -204,44 +210,31 @@ float: center;
     padding-left: 28%;
 }
 
-img {
+.wineImage {
     height: 250px;
     margin-right: 2%;
-}
-
-.innerbox {
-    width: 50%;
-    height: 300px;
-    margin: 0px;
-    padding: 2px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    display: flex;
-    padding: 10px;
+    float: right;
+    margin-left: 1%;
 }
 
 .wineHeader {
     width: 100%;
     height: 40px;
     text-align: center;
-}
-
-
-.wineImage {
-    float: right;
-    margin-left: 1%;
-    
+    font-family: 'Satisfy', cursive;
 }
 
 .wineName {
     float: left;
     width: 30%;
 }
+
 .maa {
     padding-top: 70px;
     padding-bottom: 10px;
     margin-left: 0px;
 }
+
 .kuvaus {
     padding-bottom: 10px;
 }
@@ -287,30 +280,41 @@ font-size: 1.5em;
     border: 2px, solid olive;
 }
 
+
+
+/* Dokumentaation css-määritykset */
+
+.document-article {
+    color: black;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+#back {
+    color: black;
+    font-size: 2em;
+}
+#document-header {
+    width: 100%;
+}
+
 @media screen and (max-width: 1000px) {
-    .innerbox {
+    .wineContainer{
         width: 100%;
-        height: 200px;
         margin: 0;
         padding: 2px;
         box-sizing: border-box;    
     }
-}
-
-@media screen and (max-width: 1300px) {
-    p {
-        font-size: 0.8em;
+    .wineList {
+        width: 100%;
+        margin: 0;
+        padding: 2px;
+        box-sizing: border-box;  
     }
-}
-
-article {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-#doku {
-    color: black;
-    padding-bottom: 20px;
-    font-size: 2em;
-    text-align: center;
+    .button {
+        display: block;
+    }
+    
 }

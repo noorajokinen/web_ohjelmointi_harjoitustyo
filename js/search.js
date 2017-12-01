@@ -1,23 +1,26 @@
+//sivun latautuessa kutsuu WineList() -funktiota, piilottaa haku-divun ja arpoo 4 viiniä etusivulle
 $(document).ready(function(){
     
-    var getWines = document.getElementById("viinituloste");
     $("#haku").hide();
     WinesList();
     randomWine();
+    showAllWines();
+    $("#viinituloste").hide();
     
 });
 
+//luo viinit etusivulle
 function WinesList(data){
     
      $.each(viinit, function(index, viini){
-         var div = $("<div>").attr("class", "wineContainer").attr("id", index);
+         var div = $("<div>").attr("class", "wineList").attr("id", index);
          var imgdiv =$("<div>").attr("class", "imgDiv");
          var infodiv =$("<div>").attr("class", "infoDiv");
          var header = $("<h3>").text(viini.nimi).attr("class", "wineHeader");
          var maa =$("<p>").text("Maa: "+viini.maa).attr("class", "maa");
          var hinta =$("<p>").text("Hinta: "+viini.hinta +" €").attr("class", "winePrice");
          var kuvaus = $("<p>").text("Kuvaus: "+viini.kuvaus).addClass("kuvaus");
-         var arvio = $("<p>").text("Arvio: "+viini.arvio).attr("class", "arvio");
+         var arvio = $("<p>").text("Oma arvio: "+viini.arvio).attr("class", "arvio");
          var kuva = $("<img>").attr("class", "wineImage").attr("src", viini.kuva);
          infodiv.append(header, maa, kuvaus, hinta, arvio);
         imgdiv.append(kuva);
@@ -26,7 +29,7 @@ function WinesList(data){
      });       
 };
 
-//arpoo randomin viinin (4krt)
+//arpoo randomin viinin (4krt) ja piilottaa muut kuin arvotut
 function randomWine() {
     
     var a = Math.floor((Math.random() * 26));
@@ -40,25 +43,25 @@ function randomWine() {
             if (a == i) {
                 
                 $("#"+a).show();
-            };
+            }
             if (a2 == i) {
                 
                 $("#"+a2).show();
-            };
+            }
             if (a3 == i) {
                 
                 $("#"+a3).show();
-            };
+            }
             if (a4 == i) {
                 
                 $("#"+a4).show();
-            };
+            }
       
-        }
+        };
     
 };
 
-// luo sivulle listan kaikista viineistä ja niiden tiedoista    
+// luo viinit Etsi viini -sivulle
 
 function showAllWines(data){
      $.each(viinit, function(index, viini){
@@ -69,32 +72,57 @@ function showAllWines(data){
          var maa =$("<p>").text("Maa: "+viini.maa).attr("class", "maa");
          var hinta =$("<p>").text("Hinta: "+viini.hinta +" €").attr("class", "winePrice");
          var kuvaus = $("<p>").text("Kuvaus: "+viini.kuvaus).addClass("kuvaus");
-         var arvio = $("<p>").text("Arvio: "+viini.arvio).attr("class", "arvio");
+         var arvio = $("<p>").text("Oma arvio: "+viini.arvio).attr("class", "arvio");
          var kuva = $("<img>").attr("class", "wineImage").attr("src", viini.kuva);
          infodiv.append(header, maa, kuvaus, hinta, arvio);
         imgdiv.append(kuva);
          $(div).append(infodiv,imgdiv);
          $("#viinituloste").append(div);
              
-     });       
+     });    
 };
-    //vaihtaa etusivulta haku sivulle...
-    $("#button1").click(function(){
-        $("section").show();
-        $("#haku").hide();
-        $("#kartta").show();
-        $("#viinituloste").hide();
-    });
-    //...ja hakusivulta etusivulle
-      $("#button2").click(function(){
-        $("section").hide();
-        $("#haku").show();
-        $("#kartta").hide();
-        $("#viinituloste").show();
-        showAllWines();
-          
-    });
 
+
+    //vaihtaa etusivulta haku sivulle...
+$("#button1").click(function(){
+    $("section").show();
+    $("#haku").hide();
+    $("#kartta").show();
+    $("#viinituloste").hide();
+    randomWine();
+    $(".h2").show();
+    emptySearch();
+    
+     $("#button1").css({
+            'text-decoration': 'underline'
+        });
+        $("#button2").css({
+            'text-decoration': 'none'
+        });
+        $("#button3").css({
+            'text-decoration': 'none'
+        });
+    
+});
+
+//...ja hakusivulta etusivulle
+$("#button2").click(function(){
+    $("section").hide();
+    $("#haku").show();
+    $("#kartta").hide();
+    $("#viinituloste").show();
+    $(".h2").hide();
+    $("#button1").css({
+            'text-decoration': 'none'
+        });
+        $("#button2").css({
+            'text-decoration': 'underline'
+        });
+        $("#button3").css({
+            'text-decoration': 'none'
+        });
+          
+});
       
 // hakee viinin nimellä
 function searchWineByName() {
@@ -120,10 +148,10 @@ function searchWineByName() {
             else {
                 $("#"+i).hide();
             }
-        }
+        };
     
 };
-
+// haku kuivuusasteella
 function searchWineByTaste() {
     
     var kuiva = document.getElementById("kuiva").checked;
@@ -141,6 +169,7 @@ function searchWineByTaste() {
         else if(viinit[i].makeus == 2 && puolikuiva == true) {
              $("#"+i).show();
             }
+        
         else if(viinit[i].makeus == 3 && puolimakea == true) {
              $("#"+i).show();
             }
@@ -148,10 +177,12 @@ function searchWineByTaste() {
        else if(viinit[i].makeus == 4 && makea == true) {
              $("#"+i).show();
             }
+        
        else if(makea == false || kuiva == false || puolikuiva == false || puolimakea == false) {
             $("#"+i).hide();
         }
-    } 
+        
+    };
     
 };
 
@@ -164,11 +195,13 @@ function emptySearch() {
        this.checked = false; 
        
 }); 
-    $(".wineContainer").show()
+    $(".wineContainer").show();
     $('#etsiviini').val('');
     $("#slider").val('30');
-}
+    $("#price").val('30');
+};
 
+//haku hinnalla
 function searchWineByPrice(){
     
     var winePrice = document.getElementById("price").value;
@@ -181,7 +214,7 @@ function searchWineByPrice(){
     else {
         $("#"+i).hide();
     }
-}
+};
     
 };
 
