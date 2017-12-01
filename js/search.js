@@ -75,12 +75,14 @@ function showAllWines(data){
         $("section").show();
         $("#haku").hide();
         $("#map").show();
+        $("#viinituloste").hide();
     });
     //...ja hakusivulta etusivulle
       $("#button2").click(function(){
         $("section").hide();
         $("#haku").show();
         $("#map").hide();
+        $("#viinituloste").show();
         showAllWines();
           
     });

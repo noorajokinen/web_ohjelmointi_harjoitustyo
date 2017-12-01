@@ -18,7 +18,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"St. Ursula Ornament Organic 2016",
-         "kuva":"images/ornament.webp",
+         "kuva":"images/ornament.jpg",
          "hinta":8.69,
          "maa":"Saksa",
          "kuvaus": "Puolimakea, keskihapokas, persikkainen, päärynäinen, hennon kukkainen",
@@ -26,7 +26,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Bird's Tree 2016",
-         "kuva":"images/birds.webp",
+         "kuva":"images/birds.jpg",
          "hinta":7.39,
          "maa":"Unkari",
          "kuvaus":"Makea, keskihapokas, persikkainen, kypsän päärynäinen, kevyen kukkainen, hennon hunajainen",
@@ -34,7 +34,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Mud House Sauvignon Blanc 2016",
-         "kuva":"images/mudhouse.webp",
+         "kuva":"images/mudhouse.jpg",
          "hinta":14.99,
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, limettinen, viherherukkainen, tomaatinlehtinen, nokkosinen, rodukas",
@@ -42,7 +42,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Pino Pino Vino Frizzante Pinot Noir",
-         "kuva":"images/pinopino.webp",
+         "kuva":"images/pinopino.jpg",
          "hinta":8.98,
          "maa":"Italia",
          "kuvaus":"Puolikuiva, hapokas, päärynäinen, sitruksinen, kevyen persikkainen. pirskahteleva",
@@ -50,7 +50,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Hardys Bin 141 Colombard Chardonnay 2016",
-         "kuva":"images/hardys.webp",
+         "kuva":"images/hardys.jpg",
          "hinta":6.99,
          "maa":"Australia",
          "kuvaus":"Kuiva, hapokas, päärynähilloinen, sitruksinen, viheromenainen, kevyen yrttinen",
@@ -58,7 +58,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Douglas Green Chenin Blanc 2017",
-         "kuva":"images/douglas.webp",
+         "kuva":"images/douglas.jpg",
          "hinta":6.99,
          "maa":"Etelä-Afrikka",
          "kuvaus":"Kuiva, hapokas, kypsän sitruksinen, klementiininen, viheromenainen, yrttinen",
@@ -66,7 +66,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Black Tower Classic Riesling 2016",
-         "kuva":"images/blacktower.webp",
+         "kuva":"images/blacktower.jpg",
          "hinta":9.49,
          "maa":"Saksa",
          "kuvaus":"Puolikuiva, hapokas, sitruksinen, viheromenainen, kevyen aprikoosinen, yrttinen",
@@ -74,7 +74,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
             {"nimi":"Vicarage Lane Marlborough Sauvignon Blanc 2017",
-         "kuva":"images/vicarage.webp",
+         "kuva":"images/vicarage.jpg",
          "hinta":11.99,
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, limettinen, viherherukkainen, herukanlehtinen, kevyen passionhedelmäinen",
@@ -82,15 +82,15 @@ var viinit=
         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Old Coach Road Unoaked Chardonnay 2016",
-         "kuva":"images/oldcoach.webp",
+         "kuva":"images/oldcoach.jpg",
          "hinta":12.82,
          "maa":"Uusi-Seelanti",
          "kuvaus":"Kuiva, hapokas, kypsän sitruksinen, keltaomenainen, kevyen ananaksinen, mausteinen",
          "makeus":1,
-         "arvio": "Ei vielä arviota."
+         "arvio": "Kohtuuhyvä viinivalinta kesäisiin illanistujaisiin."
         },
         {"nimi":"Gazzera Pinot Grigio Moscato Organic 2016",
-         "kuva":"images/gazzera.webp",
+         "kuva":"images/gazzera.jpg",
          "hinta":8.99,
          "maa":"Italia",
          "kuvaus":"Puolikuiva, keskihapokas, sitruksinen, päärynäinen, litsiluumuinen, kukkainen",
@@ -98,7 +98,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Yellow Tail Pinot Grigio 2016",
-         "kuva":"images/yellowtail.webp",
+         "kuva":"images/yellowtail.jpg",
          "hinta":9.99,
          "maa":"Australia",
          "kuvaus":"Puolikuiva, keskihapokas, sitruksinen, päärynäinen, kevyen persikkainen, yrttinen",
@@ -106,7 +106,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Casa di Malia Organic Prosecco Frizzante",
-         "kuva":"images/casadi.webp",
+         "kuva":"images/casadi.jpg",
          "hinta":12.49,
          "maa":"Italia",
          "kuvaus":"Puolikuiva, hapokas, pirskahteleva, kevyen limettinen, viherpäärynäinen, hennon aprikoosinen, yrttinen",
@@ -114,7 +114,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Asio Otus Bianco",
-         "kuva":"images/asio.webp",
+         "kuva":"images/asio.jpg",
          "hinta":10.98,
          "maa":"Italia",
          "kuvaus":"Puolikuiva, keskihapokas, aprikoosinen, hunajameloninen, sitrushilloinen, kukkainen, mausteinen",
@@ -122,7 +122,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Vinha do Rosario 2015",
-         "kuva":"images/vinha.webp",
+         "kuva":"images/vinha.jpg",
          "hinta":6.89,
          "maa":"Portugali",
          "kuvaus":"Puolikuiva, keskihapokas, hunajameloninen, päärynäinen, hennon mausteinen",
@@ -130,7 +130,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"J.P. Chenet Sauvignon Blanc 2016",
-         "kuva":"images/jp.webp",
+         "kuva":"images/jp.jpg",
          "hinta":7.98,
          "maa":"Ranska",
          "kuvaus":"Kuiva, hapokas, karviaismainen, limettinen, kevyen herukkainen, hennon yrttinen",
@@ -138,7 +138,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Bigi Est! Est!! Est!!! 2015",
-         "kuva":"images/bigi.webp",
+         "kuva":"images/bigi.jpg",
          "hinta":9.01,
          "maa":"Italia",
          "kuvaus":"Kuiva, keskihapokas, sitruksinen, kevyen hedelmäinen, hennon mausteinen",
@@ -146,7 +146,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Lamberti Pinot Grigio 2016",
-         "kuva":"images/lamberti.webp",
+         "kuva":"images/lamberti.jpg",
          "hinta":9.99,
          "maa":"Italia",
          "kuvaus":"Kuiva, keskihapokas, sitruksinen, kypsän päärynäinen, hennon hunajameloninen, kevyen yrttinen",
@@ -154,7 +154,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Oodi Vapaudelle Chenin Blanc 2016",
-         "kuva":"images/oodi.webp",
+         "kuva":"images/oodi.jpg",
          "hinta":9.99,
          "maa":"Etelä-Afrikka",
          "kuvaus":"Kuiva, hapokas, sitruksinen, viheromenainen, kevyen yrttinen",
@@ -162,7 +162,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"Jacob's Creek Riesling 2017",
-         "kuva":"images/jacobs.webp",
+         "kuva":"images/jacobs.jpg",
          "hinta":9.99,
          "maa":"Australia",
          "kuvaus":"Kuiva, hapokas, limettinen, viheromenainen, suolaheinäinen, hennon mineraalinen",
@@ -170,7 +170,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
             {"nimi":"Pelicans Sauvignon Blanc 2015",
-         "kuva":"images/pelicans.webp",
+         "kuva":"images/pelicans.jpg",
          "hinta":10.95,
          "maa":"Chile",
          "kuvaus":"Kuiva, hapokas, yrttinen, sitruksinen, hedelmäinen, aromikas",
@@ -178,7 +178,7 @@ var viinit=
         "arvio": "Ei vielä arviota."
         },
         {"nimi":"Kärppäviini",
-         "kuva":"images/karppa.webp",
+         "kuva":"images/karppa.jpg",
          "hinta":11.90,
          "maa":"Ranska",
          "kuvaus":"Kuiva, keskihapokas, hedelmäinen",
@@ -186,7 +186,7 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         {"nimi":"B.io Catarratto Chardonnay Vino Biologico 2016",
-         "kuva":"images/bio.webp",
+         "kuva":"images/bio.jpg",
          "hinta":12.79,
          "maa":"Italia",
          "kuvaus":"Kuiva, keskihapokas, hedelmäinen, sitruksinen, yrttinen",
@@ -195,7 +195,7 @@ var viinit=
          
         },
         {"nimi":"Gatão",
-         "kuva":"images/gatao.webp",
+         "kuva":"images/gatao.jpg",
          "hinta":8.19,
          "maa":"Portugali",
          "kuvaus":"Puolikuiva, keskihapokas, viherpäärynäinen, ananaksinen, pirskahteleva.",

@@ -16,19 +16,24 @@
           <span class="button" id="button1">Etusivu</span>
           <span class="button" id="button2">Etsi viini</span>
           </nav>
-          <div id="haku">
-               
-            <input id="etsiviini" onkeyup="searchWineByName()" placeholder="Hae viinejä">
-              
-              <div id="makeusaste">
-                  Kuiva <input type="checkbox" id="kuiva"> <br>
-                  Puolikuiva <input type="checkbox" id="puolikuiva"> <br>
-                  Puolimakea <input type="checkbox" id="puolimakea"> <br>
-                  Makea <input type="checkbox" id="makea"> <br>
-                  <button onclick="searchWineByTaste()">Etsi</button>
-                  <button onclick="emptySearch()">Tyhjennä</button>
+          <div id="haku" class="container">
+               <div id="tekstiHaku" class="search">
+                   <h2>Hae nimellä:</h2><br>
+            <input id="etsiviini" onkeyup="searchWineByName()" placeholder="Hae viinejä" class="searchBox">
+            </div>  
+              <div id="makeusaste" class="search" >
+                  <h2>Hae makeusasteella:</h2>
+                  <div id="makeus">
+                  Kuiva <input type="checkbox" id="kuiva" class="checkBox"> <br>
+                  Puolikuiva <input type="checkbox" id="puolikuiva" class="checkBox"> <br>
+                  Puolimakea <input type="checkbox" id="puolimakea" class="checkBox"> <br>
+                  Makea <input type="checkbox" id="makea" class="checkBox"> <br><br>
+                  <button onclick="searchWineByTaste()" class="makuhaku" >Etsi</button>
+                  <button onclick="emptySearch()" class="makuhaku">Tyhjennä</button>
+                </div>
               </div>
-              
+              <div id="sliderHaku" class="search">
+                  <h2>Hae hinnalla:</h2><br>
               <form method="get" oninput="price.value=slider.value">
            
               <label id="winePrice">
@@ -36,22 +41,22 @@
                     
                     1€
                     
-                    <input type="range" id="slider" value="15" min="1" max="30" onclick="searchWineByPrice()"> 30€
+                    <input type="range" id="slider" value="15" min="1" max="30" onclick="searchWineByPrice()"> 30€<br>
                     
                   <br>
-                  <output id="price" name="price" for="slider">0</output>
-                    €<br>
-                  
+                  <p>Valittu hinta</p>
+                  <output id="price" name="price" for="slider">0</output>€
               
               </label>
                   
               </form>
-   
+                </div>
+              </div>
             <div id="viinituloste"></div>
               
-          </div>
-          <section id="randomviini"></section>
           
+          <section id="randomviini"></section>
+          <h2>Suosikkejamme myyvät Alkot kautta maan </h2>
     <div id="map"></div>
               
           
