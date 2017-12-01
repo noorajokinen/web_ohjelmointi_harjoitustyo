@@ -11,9 +11,10 @@
     padding-bottom: 70px;
     
 }
-#heading {
-    color: brown;
+#kartta {
+    padding-top: 30px;
 }
+
 #viinituloste {
     width: 100%;
     padding: 0;
@@ -69,7 +70,7 @@ main {
     margin: auto;
     background-color: white;
     margin-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
 }
 
 header {
@@ -120,7 +121,10 @@ h1 {
 }
 h2 {
     text-align-last: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 h3 {
