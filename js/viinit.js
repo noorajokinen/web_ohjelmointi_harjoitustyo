@@ -203,5 +203,13 @@ var viinit=
          "arvio": "Ei vielä arviota."
         },
         
+        {"nimi":"Viña Maipo Moscato",
+         "kuva":"images/vina.jpg",
+         "hinta":6.99,
+         "maa":"Chile",
+         "kuvaus":"Makea, keskihapokas, sitruksinen, persikkainen, kevyen päärynäinen, kukkainen",
+         "makeus":4,
+         "arvio": "Ei vielä arviota."
+        }
     ]
     

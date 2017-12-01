@@ -1,0 +1,58 @@
+<!DoCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+    </head>
+    <body>
+    <main>
+    <header>
+        <h1>Dokumentaatio</h1>
+    </header>
+       <article>
+        <h2>Web-ohjelmointi TTMS0500 - Harjoitustyö </h2>
+        <br>
+        <p>Noora Jokinen <br>
+            Suvi Jyläskoski<br> 
+            30.11.2017 </p>
+        <h3>Yleiskuvaus</h3>
+        <p></p>
+        <h3>Käytetyt tekniikat</h3>
+        <p></p>
+        <h4>Javascript ja jQuery</h4>
+        <p></p>
+        <h4>Json + ajax </h4>
+        <p>Alkot.json on json-tiedosto, joka on melkein identtinen Alkon omilta sivuilta löytyvään jsoniin. Poistimme kuitenkin alkuperäisestä jsonista Alkon noutopisteet, koska halusimme sivullemme vain oikeat Alkon myymälät.  
+        Ajax-toiminnolla haemme alkot.jsonista Alkojen sijainnit, nimet, osoitteet, puhelinnumerot, ja aukioloajat. Tuomme tiedot kartalla oleviin markkereihin.   </p>
+        <h4>Javascript-objekti </h4>
+        <p>Valitsimme viineillemme mieluummin javascript-objektin, koska lisäämme ja valitsemme viinit itse. Javascript-objektia on helpompaa kutsua ja käyttää, koska ei tarvita ajax-toimintoa. Tämän valinnan, ettemme käytä viineille json + ajax -toimintoa, teimme kaverimme suosituksesta, ja jälkeenpäin ajatellen se helpotti työtämme monessa kohtaa.  </p>
+        <h3>Toiminnot </h3>
+        <h4>Kartta</h4>
+        <p>Aloitimme työmme tällä osuudella. Halusimme sivullemme kartan, jossa näkyy kaikki Suomen Alko-myymälät. Kartta saatiin sivulle melko helposti, katsomalla ohjeita tunnilla tehdystä karttasovelluksista.  <br>
+            Alkot ja niiden sijainnit löytyivät näppärästi Alkon omilta sivuilta, json tiedostosta. Kopioimme json tiedoston ja karsimme siitä pois Alkon noutopisteet.  
+            Tähän työvaiheeseen meni aikaa noin 4 tuntia.  </p>
+           <h4>Haku</h4>
+           <p>Halusimme, että viinejä pystyy hakemaan muutamilla eri ehdoilla. Nimellä, kuivuusasteella ja hinnalla.<br>  
+               Nimellä <br>
+               Nimellä hakeminen oli hakutoiminnoista ehdottomasti haastavin toteuttaa, ja se veikin aikaa noin 6 tuntia. Liikkeelle lähdettiin: <br> 
+               Kuivuusasteella <br>
+               Hinnalla </p>
+           <h4>Satunnainen viini</h4>
+           <h3>Lisätoiminnot</h3>
+           <p>Eli toiminnot, jotka olisi toteutettu, jos olisi jäänyt aikaa. </p>
+           <h4>Viinin lisääminen</h4>
+           <p>Jätimme tämän toiminnon heti alkuun ”ehkä” listalle, koska tiesimme, että yksinkertaisiltakin kuulostavat hakutoiminnot saattavat syödä yllättävän paljon aikaa.  <br>
+            Jos olisimme rakentaneet tämänkin toiminnon, olisi sillä pystynyt lisäämään maisteltuja viinejä ja antamaan niille arvioita.  </p>
+           <h4>Hakuehtojen yhdistäminen </h4>
+           <p>Jos lähtisimme parantamaan työtämme, keskittyisimme ensimmäisenä tähän pieneen epäkohtaan. Kaikki hakutoiminnot toimivat erikseen moitteettomasti, mutta niitä ei pysty yhdistelemään.  <br>
+            Eli jos haetaan ensimmäisenä nimellä, ja kirjoitetaan hakukenttään ”j”, se rajaa kaikki viinit, joissa on j-kirjain. Mutta jos halutaan kaikki kuivat viini, joissa on ”j”, se ei onnistu. Haussa toimii aina viimeisimmäksi muutettu osuus, eli jos haetaan ensin alle 8 euron hintaisia viinejä, ja sitten makeita viinejä, on hakutuloksena vain makeat viinit, eikä alle 8 euron makeat viinit.  </p>
+           <h3>Toiminnot, joista luovuttiin</h3>
+           <p>Viinin otsikkoa klikatessa, ilmestyisi viini nimen alle viinin muut tiedot. Tämä ominaisuus kuitenkin poistettiin, koska viinejä olisi vaikeampi vertailla keskenään samaan aika</p>
+           <h3>Ajan käyttö</h3>
+           <h3>Itsearvio</h3>
+        </article> 
+    </main>
+    
+    </body>
+</html>

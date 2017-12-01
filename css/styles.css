@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #map {
     border: 1px solid black;
     height: 480px;
@@ -9,52 +14,88 @@
 #heading {
     color: brown;
 }
+#viinituloste {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 
 .wineContainer{
-    border-style: solid;
-    border-color: black;
-    padding: 10%;
-    height: 230px;
+    width: 50%;
+    height: 300px;
+    margin: 0px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    display: flex;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .wineContainer{
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        padding: 2px;
+        box-sizing: border-box;    
+    }
 }
 body {
     margin: 0px auto;
     background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-    
+    background-size: cover; 
 }
 
 main {
-    width: 80%;
+    width: 87%;
     margin: auto;
     background-color: oldlace;
+    margin-top: 0px;
 }
 
 header {
     text-align: center;
-    height: 300px;
-    background-image: url(/images/header.jpeg);
+    height: 340px;
+    background-image: url(/images/wineheader.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     border-radius: 3px;
+    margin-top: 0px;
     
     
 }
 nav {
-    text-align: center;
+    align-content: center;
     height: 100px;
+    background-color: #758614;
+    padding-top: 20px;
+    display: flex;
+    
+}
+
+nav > span {
+  flex: 1; 
 }
 .button{
-    background-color: antiquewhite;
+    
     font-family: 'Raleway', sans-serif;
-    font-size: 3em;
-    color: black;
+    font-size: 2.7em;
+    color: antiquewhite;
     padding-bottom: 10px;
     border-color: darkolivegreen;
-    width: 300px;
+    width: 33%;
+    text-align-last: center;
     
     
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -107,9 +148,7 @@ float: center;
   color: black;
 }
 
-.checkBox {
-    
-}
+
 
 #slider {
     -webkit-appearance: none;
@@ -164,7 +203,7 @@ img {
 
 .wineImage {
     float: center;
-    margin-left: 40%;
+    margin-left: 1%;
     
 }
 
