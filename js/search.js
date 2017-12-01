@@ -10,14 +10,18 @@ $(document).ready(function(){
 function WinesList(data){
     
      $.each(viinit, function(index, viini){
-         var div = $("<div>").attr("class", "innerbox").attr("id", index);
-         var header = $("<h3>").text(viini.nimi);
-         var kuva = $("<img>").attr("class", "wineImage").attr("src", viini.kuva);
-         var maa =$("<p>").text("Maa:"+viini.maa);
-         var hinta =$("<p>").text("Hinta: "+viini.hinta);
+         var div = $("<div>").attr("class", "wineContainer").attr("id", index);
+         var imgdiv =$("<div>").attr("class", "imgDiv");
+         var infodiv =$("<div>").attr("class", "infoDiv");
+         var header = $("<h3>").text(viini.nimi).attr("class", "wineHeader");
+         var maa =$("<p>").text("Maa: "+viini.maa).attr("class", "maa");
+         var hinta =$("<p>").text("Hinta: "+viini.hinta +" €").attr("class", "winePrice");
          var kuvaus = $("<p>").text("Kuvaus: "+viini.kuvaus).addClass("kuvaus");
-         var arvio = $("<p>").text("Arvio: "+viini.arvio).attr("class", "arvio")
-         div.append(header, kuva, maa, kuvaus, hinta, arvio);
+         var arvio = $("<p>").text("Arvio: "+viini.arvio).attr("class", "arvio");
+         var kuva = $("<img>").attr("class", "wineImage").attr("src", viini.kuva);
+         infodiv.append(header, maa, kuvaus, hinta, arvio);
+        imgdiv.append(kuva);
+         $(div).append(infodiv,imgdiv);
          $("#randomviini").append(div);  
      });       
 };
@@ -25,10 +29,10 @@ function WinesList(data){
 //arpoo randomin viinin (4krt)
 function randomWine() {
     
-    var a = Math.floor((Math.random() * 25));
-    var a2 = Math.floor((Math.random() * 25));
-    var a3 = Math.floor((Math.random() * 25));
-    var a4 = Math.floor((Math.random() * 25));
+    var a = Math.floor((Math.random() * 26));
+    var a2 = Math.floor((Math.random() * 26));
+    var a3 = Math.floor((Math.random() * 26));
+    var a4 = Math.floor((Math.random() * 26));
 
         for(var i=0; i < viinit.length; i++) {
             $("#"+i).hide();
@@ -59,13 +63,17 @@ function randomWine() {
 function showAllWines(data){
      $.each(viinit, function(index, viini){
          var div = $("<div>").attr("class", "wineContainer").attr("id", index);
-         var header = $("<h3>").text(viini.nimi);
-         var kuva = $("<img>").attr("class", "wineImage").attr("src", viini.kuva);
-         var maa =$("<p>").text("Maa:"+viini.maa);
-         var hinta =$("<p>").text("Hinta: "+viini.hinta);
+         var imgdiv =$("<div>").attr("class", "imgDiv");
+         var infodiv =$("<div>").attr("class", "infoDiv");
+         var header = $("<h3>").text(viini.nimi).attr("class", "wineHeader");
+         var maa =$("<p>").text("Maa: "+viini.maa).attr("class", "maa");
+         var hinta =$("<p>").text("Hinta: "+viini.hinta +" €").attr("class", "winePrice");
          var kuvaus = $("<p>").text("Kuvaus: "+viini.kuvaus).addClass("kuvaus");
-         var arvio = $("<p>").text("Arvio: "+viini.arvio).attr("class", "arvio")
-         div.append(header, kuva, maa, kuvaus, hinta, arvio);
+         var arvio = $("<p>").text("Arvio: "+viini.arvio).attr("class", "arvio");
+         var kuva = $("<img>").attr("class", "wineImage").attr("src", viini.kuva);
+         infodiv.append(header, maa, kuvaus, hinta, arvio);
+        imgdiv.append(kuva);
+         $(div).append(infodiv,imgdiv);
          $("#viinituloste").append(div);
              
      });       
@@ -88,7 +96,7 @@ function showAllWines(data){
     });
 
       
-
+// hakee viinin nimellä
 function searchWineByName() {
     
     var getWines = document.getElementById("viinituloste");

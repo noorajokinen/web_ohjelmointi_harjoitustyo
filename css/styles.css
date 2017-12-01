@@ -8,7 +8,7 @@
     height: 480px;
     width:  800px;
     margin: 20px auto;
-    margin-bottom: 50px;
+    padding-bottom: 70px;
     
 }
 #heading {
@@ -24,17 +24,29 @@
 }
 
 
-
 .wineContainer{
     width: 50%;
     height: 300px;
     margin: 0px;
     padding: 2px;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 1px solid olive;
     display: flex;
     padding: 10px;
 }
+
+.infoDiv {
+    width: 80%;
+    height: 300px;
+    margin: 0px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    
+}
+.imgDiv {
+    align-content: center;
+}
+
 
 @media screen and (max-width: 1000px) {
     .wineContainer{
@@ -49,13 +61,15 @@ body {
     margin: 0px auto;
     background-repeat: no-repeat;
     background-size: cover; 
+    background-color: #e3e6d0;
 }
 
 main {
     width: 87%;
     margin: auto;
-    background-color: oldlace;
+    background-color: white;
     margin-top: 0px;
+    padding-bottom: 20px;
 }
 
 header {
@@ -187,7 +201,8 @@ float: center;
 }
 
 img {
-    height: 190px;
+    height: 250px;
+    margin-right: 2%;
 }
 
 .innerbox {
@@ -201,8 +216,15 @@ img {
     padding: 10px;
 }
 
+.wineHeader {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+
 .wineImage {
-    float: center;
+    float: right;
     margin-left: 1%;
     
 }
@@ -210,6 +232,18 @@ img {
 .wineName {
     float: left;
     width: 30%;
+}
+.maa {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+}
+.kuvaus {
+    padding-bottom: 10px;
+}
+
+.winePrice{
+    padding-bottom: 10px;
 }
 
 p {
@@ -224,7 +258,7 @@ p {
 }
 
 .makuhaku {
-     background-color: olive; /* Green */
+     background-color: olive;
     border: none;
     color: white;
     padding: 11px 25px;
