@@ -261,6 +261,11 @@ p {
     height: 20px;
 }
 
+h2.makunimi {
+   font-family: 'Raleway', sans-serif; 
+font-size: 1.5em;
+}
+
 .makuhaku {
      background-color: olive;
     border: none;
@@ -296,4 +301,16 @@ p {
     p {
         font-size: 0.8em;
     }
+}
+
+article {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#doku {
+    color: black;
+    padding-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
 }

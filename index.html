@@ -19,11 +19,11 @@
           </nav>
           <div id="haku" class="container">
                <div id="tekstiHaku" class="search">
-                   <h2>Hae nimellä:</h2><br>
+                   <h2 class="makunimi">Hae nimellä:</h2><br>
             <input id="etsiviini" onkeyup="searchWineByName()" placeholder="Hae viinejä" class="searchBox">
             </div>  
               <div id="makeusaste" class="search" >
-                  <h2>Hae makeusasteella:</h2><br>
+                  <h2 class="makunimi">Hae makeusasteella:</h2><br>
                   <div id="makeus">
                   Kuiva <input type="checkbox" id="kuiva" class="checkBox"> <br>
                   Puolikuiva <input type="checkbox" id="puolikuiva" class="checkBox"> <br>
@@ -34,7 +34,7 @@
                 </div>
               </div>
               <div id="sliderHaku" class="search">
-                  <h2>Hae hinnalla:</h2><br>
+                  <h2 class="makunimi">Hae hinnalla:</h2><br>
               <form method="get" oninput="price.value=slider.value">
            
               <label id="winePrice">
@@ -53,12 +53,13 @@
                 </div>
               </div>
             <div id="viinituloste"></div>
-              
+              <h2>Sinulle sopiva satunnainen viini</h2>
           
           <section id="randomviini"></section>
+          <div id="kartta">
           <h2>Suosikkejamme myyvät Alkot kautta maan </h2>
     <div id="map"></div>
-              
+          </div>    
           
       </main>
       

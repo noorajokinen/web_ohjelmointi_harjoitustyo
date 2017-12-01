@@ -13,32 +13,42 @@
        <article>
         <h2>Web-ohjelmointi TTMS0500 - Harjoitustyö </h2>
         <br>
+        <br><br>
         <p>Noora Jokinen <br>
             Suvi Jyläskoski<br> 
             30.11.2017 </p>
         <h3>Yleiskuvaus</h3>
-        <p></p>
+        <p>Harjoitustyömme on valkoviinien tietoja sisältävä sivu, jossa käyttäjä voi valita viinin etusivun satunnaisista ehdotuksista tai hakemalla viinihaun kautta jotain tiettyä viiniä. Tiedoissa on tallennettuja jo meille tuttuja sekä vielä kokeilemattomia viinejä. Sivusto voisikin palvella tekijöitään viinikatalogina. Sivusto näyttää myös Suomen kaikkien Alko-myymälöiden sijainnin ja aukioloaikatiedot. Harjoitustyön idea lähti viiniharrastuksestamme, josta olemme syksyn aikana kuulleet yhtä sun toista kommenttia. Työ on siis toteutettu yleisön pyynnöstä. </p>
         <h3>Käytetyt tekniikat</h3>
         <p></p>
         <h4>Javascript ja jQuery</h4>
-        <p></p>
+        <p>Käytimme työssämme Javascriptiä ja jQuery -kirjastoa.</p><br>
         <h4>Json + ajax </h4>
-        <p>Alkot.json on json-tiedosto, joka on melkein identtinen Alkon omilta sivuilta löytyvään jsoniin. Poistimme kuitenkin alkuperäisestä jsonista Alkon noutopisteet, koska halusimme sivullemme vain oikeat Alkon myymälät.  
-        Ajax-toiminnolla haemme alkot.jsonista Alkojen sijainnit, nimet, osoitteet, puhelinnumerot, ja aukioloajat. Tuomme tiedot kartalla oleviin markkereihin.   </p>
+        <p>Alkot.json on json-tiedosto, joka on melkein identtinen Alkon omilta sivuilta löytyvään jsoniin. Poistimme kuitenkin alkuperäisestä jsonista Alkon noutopisteet, koska halusimme sivullemme vain oikeat Alkon myymälät.  <br>
+        Ajax-toiminnolla haemme alkot.jsonista Alkojen sijainnit, nimet, osoitteet, puhelinnumerot, ja aukioloajat. Tiedostosta haetaan tiedot kartan markkereihin. Tämän toiminnon koodaamiseen otimme mallia tunneilla tehdystä Golfkenttä-harjoituksesta.   </p><br>
         <h4>Javascript-objekti </h4>
-        <p>Valitsimme viineillemme mieluummin javascript-objektin, koska lisäämme ja valitsemme viinit itse. Javascript-objektia on helpompaa kutsua ja käyttää, koska ei tarvita ajax-toimintoa. Tämän valinnan, ettemme käytä viineille json + ajax -toimintoa, teimme kaverimme suosituksesta, ja jälkeenpäin ajatellen se helpotti työtämme monessa kohtaa.  </p>
+        <p>Valitsimme viineillemme mieluummin javascript-objektin, koska lisäämme ja valitsemme viinit itse. Suunnittelimme aluksi hakevamme viinien tiedot alkon sivuilta, mutta emme löytäneet sivuilta valmista tiedostoa, josta tietoja olisi voinut hakea. Aluksi viinit.js -tiedosto oli json-tiedosto, mutta päätimme työn edetessä vaihtaa tiedostomuodon pelkäksi js-taulukoksi. Javascript-objektia on helpompaa kutsua ja käyttää, koska ei tarvita ajax-toimintoa. Tämän valinnan, ettemme käytä viineille json + ajax -toimintoa, teimme kaverimme suosituksesta, ja jälkeenpäin ajatellen se helpotti työtämme monessa kohtaa.<br>
+         Viinit.js -objektissa on taulukoituna 26 eri viiniä, niiden nimet, kuvat, maat, hinnat, kuvaukset ja arviot. Kaikki ominaisuudet, lukuunottamatta arviota ja makeusasetta on kopioitu Alkon sivuilta. Makeusasteelle loimme numeroarvon, jotta haku-toiminnolla viinejä voisi hakea makeusasteen perusteella. </p><br>
         <h3>Toiminnot </h3>
+        <h4>Etusivu ja etsi viini</h4>
+        <p>Koko sivusto latautuu yhdelle html-sivulle, josta Etusivu- ja Etsi viini-painikkeet joko piilottavat tai näyttävät divejä ja niiden tietoja. Etsi viini -painike suorittaa myös showAllWines-funktio, joka hakee viinit.js:n taulukosta kaikkien viinien tiedot. </p>
         <h4>Kartta</h4>
         <p>Aloitimme työmme tällä osuudella. Halusimme sivullemme kartan, jossa näkyy kaikki Suomen Alko-myymälät. Kartta saatiin sivulle melko helposti, katsomalla ohjeita tunnilla tehdystä karttasovelluksista.  <br>
-            Alkot ja niiden sijainnit löytyivät näppärästi Alkon omilta sivuilta, json tiedostosta. Kopioimme json tiedoston ja karsimme siitä pois Alkon noutopisteet.  
+            Alkot ja niiden sijainnit löytyivät näppärästi Alkon omilta sivuilta, json-tiedostosta. Kopioimme json-tiedoston ja karsimme siitä pois Alkon noutopisteet.  
             Tähän työvaiheeseen meni aikaa noin 4 tuntia.  </p>
            <h4>Haku</h4>
-           <p>Halusimme, että viinejä pystyy hakemaan muutamilla eri ehdoilla. Nimellä, kuivuusasteella ja hinnalla.<br>  
-               Nimellä <br>
-               Nimellä hakeminen oli hakutoiminnoista ehdottomasti haastavin toteuttaa, ja se veikin aikaa noin 6 tuntia. Liikkeelle lähdettiin: <br> 
-               Kuivuusasteella <br>
-               Hinnalla </p>
+           <p>Halusimme, että viinejä pystyy hakemaan muutamilla eri ehdoilla. Nimellä, kuivuusasteella ja hinnalla. Aluksi kokeilimme saada hakutulokset näkymään listana.(Listakoodi on jätetty search.js-sivun kommentteihin)<br>  
+               - Nimellä <br>
+               Nimellä hakeminen oli hakutoiminnoista ehdottomasti haastavin toteuttaa, ja se veikin aikaa noin 6 tuntia.  <br> 
+               - Kuivuusasteella <br>
+               Kuivuusasteella hakeminen toteutettiin checkboxeilla, joista jokaisella on oma numeroarvonsa. Jos checkboxiin merkitty numeroarvo on sama kuin viinin makeusaste, sivu näyttää viinin hakutuloksissa.
+               - Hinnalla 
+                Hintahaku on toteutettu sliderilla, jota liikuttamalla käyttäjä valitsee hinnalle ylärajan. Javascript-koodissa funktio ottaa sliderin outputin arvon ja vertaa sitä taulukossa olevien hintojen arvoihin. Jos hinta on pienempi tai yhtä suuri kuin sliderin arvo, haku näyttää viinin hakutuloksissa. </p><br>
+           <h4>Kaikkien viinien näyttäminen</h4>
+           <p>Klikattaessa Etsi viini -linkkiä sivusto hakee showAllWines -funktiolla listan kaikista viinit.js -taulukkoon lisätyistä viineistä ja näyttää viinit listana. Samaa funktiota, eri nimellä tosin, on hyödynnetty satunnaisen viinin näyttämisessä. <br>
+               ShowAllWines-funktio on tehty taloharjoituksessa käytettyä funktiota matkien. Eli funktio luo taulukon ominaisuuksista elementtejä ja sijoittaa ne index.html -sivulla olevaan diviin. Funktio luo oman divin viinin tiedoille ja kuvalle ja vielä lisädivin, jonka sisälle nämä divit tulevat. Tämän funtion osalta haasteellisinta oli saada div muodostumaan järkevän näköiseksi.</p><br>
            <h4>Satunnainen viini</h4>
+           <p>Sivuston etusivulla on nelikenttä, johon sivuston avautuessa latautuu satunnaisesti neljän viinit.js:n taulukossa olevan viinin tiedot WinesList-funktiolla. Funktiossa on hyödynnetty showAllWines-funktiota. Tämän jälkeen RandomWine-funktio arpoo neljä kertaa Math.floor ja Math-random-toiminnoilla satunnaisen luvun väliltä 0-26. Arvottua lukua verrataan WinesList-funktiossa luotujen divien id-numeroon. Jos numero on sama, viinin tiedot näkyvät satunnaiset viinit -nelikentässä. Funktio ei kuitenkaan näytä samaa viiniä kahdessa nelikentässä, mistä johtuen joillain sivun latauskerroilla näkyy neljän kentän sijaan vain kolme kenttää.<br></p>
            <h3>Lisätoiminnot</h3>
            <p>Eli toiminnot, jotka olisi toteutettu, jos olisi jäänyt aikaa. </p>
            <h4>Viinin lisääminen</h4>
@@ -48,10 +58,19 @@
            <p>Jos lähtisimme parantamaan työtämme, keskittyisimme ensimmäisenä tähän pieneen epäkohtaan. Kaikki hakutoiminnot toimivat erikseen moitteettomasti, mutta niitä ei pysty yhdistelemään.  <br>
             Eli jos haetaan ensimmäisenä nimellä, ja kirjoitetaan hakukenttään ”j”, se rajaa kaikki viinit, joissa on j-kirjain. Mutta jos halutaan kaikki kuivat viini, joissa on ”j”, se ei onnistu. Haussa toimii aina viimeisimmäksi muutettu osuus, eli jos haetaan ensin alle 8 euron hintaisia viinejä, ja sitten makeita viinejä, on hakutuloksena vain makeat viinit, eikä alle 8 euron makeat viinit.  </p>
            <h3>Toiminnot, joista luovuttiin</h3>
-           <p>Viinin otsikkoa klikatessa, ilmestyisi viini nimen alle viinin muut tiedot. Tämä ominaisuus kuitenkin poistettiin, koska viinejä olisi vaikeampi vertailla keskenään samaan aika</p>
-           <h3>Ajan käyttö</h3>
+           <p>Viinin otsikkoa klikatessa, ilmestyisi viini nimen alle viinin muut tiedot. Tämä ominaisuus kuitenkin poistettiin, koska viinejä olisi vaikeampi vertailla keskenään samaan aikaan. Totesimme yksinkertaisemmaksi vaihtoehdoksi viinien listauksen, jossa näkyy kerralla viinin kaikki tiedot.</p>
+           <h3>Ajan käyttö ja työnjako</h3>
+           <p> Olemme paria tuntia lukuunottamatta tehneet työtä itsenäisesti. Maps.js ja viinit.js -tiedostot on tehty yhdessä tunneilla. Samoin satunnainen viinihaku.<br>
+           Muiden osalta työnjako oli seuraava: <br>
+           Noora: <br>
+           Suvi: Kaikkien viinien haku, slider-toiminto, hakutulosteiden ja satunnaisen viinin  ulkoasu<br></p>
            <h3>Itsearvio</h3>
-        </article> 
+           <p>Noora:<br>
+            Suvi: 3
+           </p>
+           <a href="index.html" class="button" id="doku">Takaisin etusivulle</a>
+        </article>
+        
     </main>
     
     </body>
